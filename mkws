@@ -1,0 +1,34 @@
+#!/bin/sh -e
+
+usage() {
+	>&2 printf "usage: %s url [path]\n" "$(basename "$0")"
+	exit 1
+}
+
+test $# -lt 1 && usage
+
+srcdir=${2:-.}
+sharedir=${MKWSTHEMEDIR:-"$srcdir"/share}
+LANG=${LANG:-en_US.UTF-8}
+
+if ! test -f "$srcdir"/index.upphtml
+then
+	>&2 printf "no index.upphtml file found\n"
+	exit 1
+fi
+
+echo "Making theme.css"
+pp "$sharedir"/theme.uppcss "$1" > theme.css
+
+for t in "$srcdir"/*.upphtml
+do
+	echo "Making $(basename "${t%.upphtml}".html)"
+	pp "$sharedir"/l.upphtml "$t" "$1" > \
+		"$(basename "${t%.upphtml}".html)"
+done
+
+echo "Making sitemap.xml"
+pp "$sharedir"/sitemap.uppxml "$1" > sitemap.xml
+
+echo "Making robots.txt"
+pp "$sharedir"/robots.upptxt "$1" > robots.txt
