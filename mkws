@@ -17,8 +17,8 @@ then
 	exit 1
 fi
 
-echo "Making theme.css"
-pp "$sharedir"/theme.uppcss "$1" > theme.css
+echo "Making s.css"
+pp "$sharedir"/s.uppcss "$1" > s.css
 
 for t in "$srcdir"/*.upphtml
 do

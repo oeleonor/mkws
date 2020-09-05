@@ -16,19 +16,19 @@ https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
 ## Installation (applies to [Linux](https://kernel.org))
 
-You'll have to download [https://mkws.sh/mkws@2.0.7.tgz](
-https://mkws.sh/mkws@2.0.7.tgz). Once you have the archive, unpack
+You'll have to download [https://mkws.sh/mkws@3.0.0.tgz](
+https://mkws.sh/mkws@3.0.0.tgz). Once you have the archive, unpack
 it and rename the newly created directory:
 
 	mkdir -p ~/src/
 	cd ~/src/
-	tar -xzfv ~/Downloads/mkws@2.0.7.tgz
+	tar -xzfv ~/Downloads/mkws@3.0.0.tgz
 	mv ws.sh example.com
 
 ## Make web site
 
 Create an `index.upphtml` file, it will be preprocessed with
-[`pp(1)`](pp.html), and run `./bin/mkws` with the url of your web site:
+[`pp(1)`](https://mkws.sh/pp.html), and run `./bin/mkws` with the url of your web site:
 
 	cd example.com
 	cat <<EOF > index.upphtml
