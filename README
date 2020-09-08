@@ -16,13 +16,13 @@ https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
 ## Installation (applies to [Linux](https://kernel.org))
 
-You'll have to download [https://mkws.sh/mkws@3.0.0.tgz](
-https://mkws.sh/mkws@3.0.0.tgz). Once you have the archive, unpack
+You'll have to download [https://mkws.sh/mkws@3.0.3.tgz](
+https://mkws.sh/mkws@3.0.3.tgz). Once you have the archive, unpack
 it and rename the newly created directory:
 
 	mkdir -p ~/src/
 	cd ~/src/
-	tar -xzfv ~/Downloads/mkws@3.0.0.tgz
+	tar -xzfv ~/Downloads/mkws@3.0.3.tgz
 	mv ws.sh example.com
 
 ## Make web site
