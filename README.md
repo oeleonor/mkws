@@ -2,7 +2,7 @@
 <p>Efficient Static Site Generator</p>
 
 <pre>
-<img src=https://mkws.sh/images/a.svg?19 width=806 height=115>
+<img src=https://mkws.sh/images/gha.svg width=806 height=96>
 </pre>
 
 ## Requirements
@@ -14,13 +14,13 @@ https://docs.microsoft.com/en-us/windows/wsl/install-win10).
 
 ## Installation (applies to [Linux](https://kernel.org))
 
-You'll have to download [https://mkws.sh/mkws@3.0.3.tgz](
-https://mkws.sh/mkws@3.0.3.tgz). Once you have the archive, unpack it and rename the newly created directory:
+You'll have to download [https://mkws.sh/mkws@4.0.0.tgz](
+https://mkws.sh/mkws@4.0.0.tgz). Once you have the archive, unpack it and rename the newly created directory:
 
 ```sh
 mkdir -p ~/src/
 cd ~/src/
-tar -xzfv ~/Downloads/mkws@3.0.3.tgz
+tar -xzfv ~/Downloads/mkws@4.0.0.tgz
 mv ws.sh example.com
 ```
 
