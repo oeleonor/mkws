@@ -1,45 +1,23 @@
-# [`mkws(1)`](https://mkws.sh) 
+# 🌐 [`mkws(1)`](https://mkws.sh)
 
-Efficient Static Site Generator
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mkws-1/netlify-blank) [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/mkws-1/vercel-blank)
 
-<pre>
-<img src=https://mkws.sh/images/gha.svg width=806 height=96>
-</pre>
 
-## Requirements
+[![GitHub license](https://img.shields.io/github/license/mkws-1/mkws-1)](https://github.com/mkws-1/mkws-1/blob/master/LICENSE)
+[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fmkws-1%2Fmkws-1)](https://twitter.com/intent/tweet?text=Check%20out%20this%20static%20site%20generator!&url=https%3A%2F%2Fgithub.com%2Fmkws-1%2Fmkws-1)
+![Twitter Follow](https://img.shields.io/twitter/follow/mkws_1?style=social)
 
-A UNIX like operating system is recommended like
-[macOS](https://www.apple.com/macos/),
-[Linux](https://kernel.org) or
-[BSD](https://en.wikipedia.org/wiki/List_of_BSD_operating_systems)
-variant (our favorites are [OpenBSD](https://openbsd.org) and
-[Void Linux](https://voidlinux.org/)).
-Also, familiarity with the command line is good to have.
-`mkws(1)` can also run on [Windows](https://www.microsoft.com/windows)
-via the
-[Windows Subsystem for Linux](
-https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+> Efficient Static Site Generator
 
-## Installation (applies to [Linux](https://kernel.org))
+<img src=https://mkws.sh/images/gha.svg#>
 
-You'll have to download [https://mkws.sh/mkws@4.0.1.tgz](
-https://mkws.sh/mkws@4.0.1.tgz). Once you have the archive, unpack
-it and rename the newly created directory:
+⚙️While on a Linux machine, just:
 
 ```sh
 mkdir -p ~/src/
 cd ~/src/
-tar -xzfv ~/Downloads/mkws@4.0.1.tgz
+wget -O - https://mkws.sh/mkws@4.0.3.tgz | tar -xzvf -
 mv ws.sh example.com
-```
-
-## Make web site
-
-Create an `index.upphtml` file, it will be preprocessed with
-[`pp(1)`](https://mkws.sh/pp.html), and run `./bin/mkws` with the url
-of your web site:
-
-```sh
 cd example.com
 cat <<EOF > index.upphtml
 <p>
@@ -49,6 +27,7 @@ echo hello, world
 </p>
 EOF
 ./bin/mkws https://example.com
+
 ```
 
 You can create more `*.upphtml` files to make additional pages, the
@@ -56,17 +35,16 @@ layout file is held in `./share/l.upphtml`.
 
 Also, you can always modify your `./bin/mkws` script, if it's the case.
 
-## Important!
+## ℹ️ Important
 
 Because [`pp(1)`](https://mkws.sh/pp.html) uses
 [`sh(1)`](
 https://pubs.opengroup.org/onlinepubs/9699919799/utilities/sh.html)
 internally, double quotes (`"`) must be escaped in templates, so to get
 an actual double quote (`"`) you have to write `\"`. This isn't a
-problem for `HTML` because [double quoting(`"`) attribute values is
-optional and double quotes (`"`) and single quotes(`'`) are
+problem for `HTML` because [double quoting attribute values is
+optional and double quotes and single quotes are
 interchangeable](
 https://html.spec.whatwg.org/multipage/syntax.html#attributes-2).
 We recommend not quoting attribute values and using single quotes (`'`)
 in special cases.
-**
