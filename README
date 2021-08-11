@@ -5,8 +5,8 @@ templating language.
 
 ## Requirements
 
-We provide statically compiled binaries for [Linux](mkws@4.0.8.tgz)
-or [OpenBSD](mkws-openbsd@4.0.8.tgz). It can also run on
+We provide statically compiled binaries for [Linux](mkws@4.0.10.tgz)
+or [OpenBSD](mkws-openbsd@4.0.10.tgz). It can also run on
 [Windows](https://www.microsoft.com/windows) via the
 [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 for other UNIX like operating systems, you
@@ -15,10 +15,10 @@ can build from sources.
 ## Install `mkws`
 
 On a Linux machine, just download the archive from
-[https://mkws.sh/mkws@4.0.8.tgz](https://mkws.sh/mkws@4.0.8.tgz) or in
+[https://mkws.sh/mkws@4.0.10.tgz](https://mkws.sh/mkws@4.0.10.tgz) or in
 the terminal, assuming `wget` is installed, type:
 
-	wget -O - https://mkws.sh/mkws@4.0.8.tgz | tar -xzvf -
+	wget -O - https://mkws.sh/mkws@4.0.10.tgz | tar -xzvf -
 
 ## File Hierarchy
 
