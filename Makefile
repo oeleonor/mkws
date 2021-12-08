@@ -1,7 +1,7 @@
 CC = cc
 LD = ${CC}
 
-PREFIX = /usr/local
+PREFIX = /usr
 MANPREFIX = ${PREFIX}/share/man
 
 install:
